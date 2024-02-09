@@ -26,7 +26,7 @@ console.log("Total Population ="+total_popu);
 
 // E.Print the country that uses US dollars as currency:
 
-var USD = (res).filter((ele)=>ele.currencies==Object.values.USD)
+var USD = (res).filter((ele)=>ele.currencies && ele.currencies.USD)
 console.log(USD);
 var country_names = USD.map((ele)=>ele.name)
 console.log(country_names);
